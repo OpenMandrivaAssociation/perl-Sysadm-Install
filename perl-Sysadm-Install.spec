@@ -6,7 +6,7 @@ Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
 Release:	%mkrel 1
 License:	GPL+ or Artistic
-Group:		Development/perl
+Group:		Development/Perl
 Url:		http://search.cpan.org/dist/Sysadm-Install/
 Source0:	http://search.cpan.org/CPAN/authors/id/M/MS/MSCHILLI/Sysadm-Install-%{upstream_version}.tar.gz
 BuildArch:	noarch
