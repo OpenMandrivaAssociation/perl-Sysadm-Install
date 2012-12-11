@@ -4,12 +4,13 @@
 Summary:	Typical installation tasks for system administrators
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	%mkrel 1
+Release:	2
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/Sysadm-Install/
 Source0:	http://search.cpan.org/CPAN/authors/id/M/MS/MSCHILLI/Sysadm-Install-%{upstream_version}.tar.gz
-BuildArch:	noarch
+
+BuildRequires:	perl-devel
 BuildRequires:	perl(Archive::Tar)
 BuildRequires:	perl(Config)
 BuildRequires:	perl(Cwd)
@@ -36,6 +37,8 @@ Requires:	perl(HTTP::Request)
 Requires:	perl(HTTP::Status)
 Requires:	perl(LWP::UserAgent)
 
+BuildArch:	noarch
+
 %description
 "Sysadm::Install" executes shell-like commands performing typical
 installation tasks: Copying files, extracting tarballs, calling "make".
@@ -50,7 +53,7 @@ everything, but suppresses any write actions.
 %setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS=vendor
+perl Makefile.PL INSTALLDIRS=vendor
 %make
 
 %check
@@ -59,13 +62,16 @@ everything, but suppresses any write actions.
 %install
 %makeinstall_std
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root,-)
 %doc Changes README 
 %{_bindir}/one-liner
 %{perl_vendorlib}/*
 %{_mandir}/man3/*
+
+%changelog
+* Mon Apr 25 2011 Sandro Cazzaniga <kharec@mandriva.org> 0.350.0-1mdv2011.0
++ Revision: 658505
+- really fix group
+- fix group
+- import perl-Sysadm-Install
 
