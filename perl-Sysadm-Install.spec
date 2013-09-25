@@ -1,14 +1,14 @@
 %define upstream_name Sysadm-Install
-%define upstream_version 0.35
+%define upstream_version 0.43
 
 Summary:	Typical installation tasks for system administrators
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Release:	1
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/Sysadm-Install/
-Source0:	http://search.cpan.org/CPAN/authors/id/M/MS/MSCHILLI/Sysadm-Install-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/authors/id/M/MS/MSCHILLI/Sysadm-Install-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Archive::Tar)
@@ -74,4 +74,5 @@ perl Makefile.PL INSTALLDIRS=vendor
 - really fix group
 - fix group
 - import perl-Sysadm-Install
+
 

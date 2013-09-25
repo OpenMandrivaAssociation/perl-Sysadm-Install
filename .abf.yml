@@ -1,2 +1,4 @@
+removed_sources:
+  Sysadm-Install-0.35.tar.gz: cb90caabf5c1c022538e2156ae051d3c5769479b
 sources:
-  "Sysadm-Install-0.35.tar.gz": cb90caabf5c1c022538e2156ae051d3c5769479b
+  Sysadm-Install-0.43.tar.gz: dd20650edc20110d038aa498dd913d196de2e828
