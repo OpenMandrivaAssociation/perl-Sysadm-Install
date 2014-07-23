@@ -11,6 +11,7 @@ Url:		http://search.cpan.org/dist/Sysadm-Install/
 Source0:	http://search.cpan.org/CPAN/authors/id/M/MS/MSCHILLI/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
+BuildRequires: perl(File::Which)
 BuildRequires:	perl(Archive::Tar)
 BuildRequires:	perl(Config)
 BuildRequires:	perl(Cwd)
