@@ -7,7 +7,7 @@ Version:	%perl_convert_version %{upstream_version}
 Release:	3
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/Sysadm-Install/
+Url:		https://search.cpan.org/dist/Sysadm-Install/
 Source0:	http://search.cpan.org/CPAN/authors/id/M/MS/MSCHILLI/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
